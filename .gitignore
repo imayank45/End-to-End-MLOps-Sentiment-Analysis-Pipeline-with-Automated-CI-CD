@@ -208,6 +208,7 @@ __marimo__/
 
 
 credentials.txt
+data/
 local_s3/
 
 sentiment-analysis-mlops/
