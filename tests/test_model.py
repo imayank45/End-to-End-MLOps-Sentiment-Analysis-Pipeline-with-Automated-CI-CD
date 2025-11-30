@@ -12,7 +12,7 @@ class TestModelLoading(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Set up DagsHub credentials for MLflow tracking
-        dagshub_token = os.getenv("CAPSTONE_TEST")
+        dagshub_token = os.getenv("SENTIMENT")
         if not dagshub_token:
             raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
 
