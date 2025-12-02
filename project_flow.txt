@@ -66,3 +66,14 @@
     - alternate: docker run -p 8888:5000 -e CAPSTONE_TEST=27935561d8b4c930c33db59adcb4db6e77abe882 capstone-app:latest
     - docker push youruser/capstone-app:latest (optional)
     - optional: try to delete image locally and pull it from dockerhub and run (optional)
+
+37. Setup aws services for below secrets and variables:
+	AWS_ACCESS_KEY_ID
+	AWS_SECRET_ACCESS_KEY
+	AWS_REGION
+	ECR_REPOSITORY (sentiment)
+    AWS_ACCOUNT_ID
+   (Also add this permission to the IAM user: AmazonEC2ContainerRegistryFullAccess)
+
+
+38. Execute CICD pipeline till the stage where we build and push image to ECR.
